@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-11-21 Sat 13:07 -->
+<!-- 2020-11-26 Thu 21:33 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>fh-dokku</title>
@@ -193,12 +193,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 <style> #content{max-width:1000px;} </style>
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
@@ -249,16 +249,19 @@
 <pre class="src src-sh"><span style="color: #928374;"># </span><span style="color: #928374;">Clone dokku client repo</span>
 <span style="color: #fabd2f;">git</span> clone https://github.com/dokku/dokku.git ~/.dokku 
 
-<span style="color: #928374;"># </span><span style="color: #928374;">Set shell alias in .bashrc or .zshrc if you use ZSH</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">On Linux and WSL set shell alias in .bashrc or .zshrc if you use ZSH</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">On Mac without zsh (you should install zsh though...it's great), you need to use ~/.bash_profile, ~/.bash_login or ~/.profile</span>
 <span style="color: #fabd2f;">echo</span> <span style="color: #b8bb26;">"alias dokku='</span><span style="color: #d3869b;">$</span><span style="color: #8ec07c;">HOME</span><span style="color: #b8bb26;">/.dokku/contrib/dokku_client.sh'"</span> &gt;&gt; ~/.zshrc
 </pre>
 </div>
 
 <p>
-<b>Set <code>DOKKU_PORT</code> environment variable in .bashrc or .zshrc</b>
+<b>Set <code>DOKKU_PORT</code> environment variable</b>
 </p>
 <div class="org-src-container">
-<pre class="src src-sh"><span style="color: #fabd2f;">echo</span> <span style="color: #b8bb26;">"export DOKKU_PORT=5412"</span> &gt;&gt; ~/.zshrc
+<pre class="src src-sh"><span style="color: #928374;"># </span><span style="color: #928374;">On Linux and WSL set the following in .bashrc or .zshrc if you use ZSH</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">On Mac without zsh (you should install zsh though...it's great), you need to use ~/.bash_profile, ~/.bash_login or ~/.profile</span>
+<span style="color: #fabd2f;">echo</span> <span style="color: #b8bb26;">"export DOKKU_PORT=5412"</span> &gt;&gt; ~/.zshrc
 </pre>
 </div>
 
@@ -276,7 +279,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Simon Sölder</p>
-<p class="date">Created: 2020-11-21 Sat 13:07</p>
+<p class="date">Created: 2020-11-26 Thu 21:33</p>
 </div>
 </body>
 </html>
